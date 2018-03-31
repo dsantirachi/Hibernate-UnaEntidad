@@ -20,7 +20,6 @@ public class ClienteDao {
 		try {
 			iniciaOperacion();
 			id = Integer. parseInt ( session .save(objeto).toString());
-			System.out.println("iMPRIME : "+session .save(objeto).toString());
 			tx .commit();
 		} catch (HibernateException he) {
 			manejaExcepcion(he);
